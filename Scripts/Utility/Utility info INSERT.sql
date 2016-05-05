@@ -1,3 +1,4 @@
+
 INSERT INTO dbo.cutomer_title([title_id], [title]) VALUES (1, 'Mr.')
 INSERT INTO dbo.cutomer_title([title_id], [title]) VALUES (2, 'Ms.')
 INSERT INTO dbo.cutomer_title([title_id], [title]) VALUES (3, 'Dr.')
@@ -16,4 +17,12 @@ INSERT INTO dbo.state([state_id], [state_abbreviation], [state_name]) VALUES (2,
 INSERT INTO phone_type([phone_type], [description]) VALUES (1, 'cell')
 INSERT INTO phone_type([phone_type], [description]) VALUES (2, 'work')
 INSERT INTO phone_type([phone_type], [description]) VALUES (3, 'home')
+
+
+INSERT INTO city([city_name], [state_id]) VALUES ('Los Angeles',1)
+INSERT INTO city([city_name], [state_id]) VALUES ('SAN FRANCISCO',1)
+INSERT INTO city([city_name], [state_id]) VALUES ('Honolulu',2)
+INSERT INTO city([city_name], [state_id]) VALUES ('London',Null)
+
+
 GO
